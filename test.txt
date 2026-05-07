@@ -1,0 +1,4 @@
+The quick brown fox jumps over the lazy dog. This is a test document 
+to see if the summarizer works. We are using a local LLM to summarize 
+this text without sending any data to the cloud. This is completely 
+private and runs on your own computer.
