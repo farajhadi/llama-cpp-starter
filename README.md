@@ -1,4 +1,4 @@
-**Running LLMs Locally with llama.cpp**
+# **Running LLMs Locally with llama.cpp**
 
 This guide shows you how to set up and run language models on your own computer. No cloud services, no API costs, just you and the model.
 Why Run Models Locally?
@@ -46,7 +46,7 @@ For this tutorial we're using Qwen 2.5 3B Q4_K_M - it runs on most computers and
 Finding models:
 Search Hugging Face for "[model name] GGUF" - that file format works with llama.cpp. Popular options include Qwen, Gemma, Phi, and LLaMA models.
 
-**Step 1: Install llama.cpp**
+## **Step 1: Install llama.cpp**
 First, we need to download llama.cpp. It's what actually runs the models.
 Getting it:
 
@@ -77,7 +77,7 @@ You enter the llama-cpp folder you just extracted. Then you run:
 
 You should see some version numbers and info about the build. That means it's working.
 
-**Step 2: Download a Model**
+## **Step 2: Download a Model**
 Now we need to download an actual language model to run.
 Get the model:
 
@@ -109,7 +109,7 @@ First response is often slower while the model warms up
 
 The download will take a few minutes depending on your connection. Once it's in your llama.cpp folder, you're ready for the next step.
 
-**Step 3: Start the Server**
+## **Step 3: Start the Server**
 
 Now we're going to get the model running as a local server.
 Starting it up:
@@ -134,7 +134,7 @@ You should see a chat interface. Type something and hit enter - you're talking t
 
 Important: Keep that Command Prompt window open. Close it and the server stops. You need it running for the next steps.
 
-**Step 4: Run the Summarizer**
+## **Step 4: Run the Summarizer**
 
 The repo includes a simple document summarizer that uses your local model.
 
@@ -171,7 +171,7 @@ The model processes it and sends back its response. Same structure as any API, j
 Why this matters:
 Normally you'd call something like api.openai.com and pay per request. Here you're calling localhost:8080 and it's free. Same format, different location. That's the whole point - you can swap between local and cloud APIs with barely any code changes.
 
-Troubleshooting
+## **Troubleshooting**
 
 "Could not connect to server" or connection errors:
 
